@@ -28,8 +28,9 @@
     },
     "license": "MIT",
     "dependencies": {
-        "@truesparrow/common-js": "=0.0.1",
-        "@truesparrow/identity-sdk-js": "=0.0.1"
+        "@truesparrow/common-js": "=0.0.2",
+        "@truesparrow/identity-sdk-js": "=0.0.1",
+        "require-directory": "=2.1.1"
     },
     "devDependencies": {
         "@truesparrow/togemfury": "=0.0.3",
@@ -38,6 +39,7 @@
         "@types/istanbul": "=0.4.29",
         "@types/mocha": "=2.2.44",
         "@types/node": "=8.0.57",
+        "@types/require-directory": "=2.1.0",
         "chai": "=4.1.2",
         "codecov": "=3.0.0",
         "coverage-filter": "=1.0.0",
