@@ -37,8 +37,8 @@ export function checkTextSourcesContainAllLanguages(m: NodeModule): void {
             }
         }});
 
-    for (let [moduleName, contents] of flat) {
-        describe('Checking text sources contain all supported languages', () => {
+    describe('Checking text sources contain all supported languages', () => {
+        for (let [moduleName, contents] of flat) {
             describe(`In "${moduleName}"`, () => {
                 for (let k of Object.keys(contents)) {
                     it(`Message "${k}" should contain all supported languages`, () => {
@@ -46,6 +46,6 @@ export function checkTextSourcesContainAllLanguages(m: NodeModule): void {
                     });
                 }
             });
-        });
-    }
+        }
+    });
 }
