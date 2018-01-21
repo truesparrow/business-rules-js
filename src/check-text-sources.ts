@@ -18,14 +18,14 @@ import { SUPPORTED_LANGUAGES } from './languages'
  *     describe calls. There'll be one for each .text.ts file. For each message in turn,
  *     there will be on it call, asserting that all of the languages in {@link SUPPORTED_LANGUAGES}
  *     are present.
- * @param sourceTreeRoot - the root of the source tree.
+ * @param m - the module relative to which to perform the check.
  */
-export function checkTextSourcesContainAllLanguages(sourceTreeRoot: string): void {
+export function checkTextSourcesContainAllLanguages(m: NodeModule): void {
     // What a massive-massive hack
     const flat: Map<string, any> = new Map<string, any>();
     let currentN: string = '__A_BAD_NAME__.js'; // will fail textRe's test!
 
-    requireDirectory(module, sourceTreeRoot, {
+    requireDirectory(m, {
         include: /.text.js$/,
         rename: (n: string) => {
             currentN = n;
