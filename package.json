@@ -1,6 +1,6 @@
 {
     "name": "@truesparrow/business-rules-js",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "description": "Common business rules",
     "author": "CHM SQRT2 Team",
     "scripts": {
